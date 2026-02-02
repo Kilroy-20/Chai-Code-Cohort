@@ -10,3 +10,14 @@ The goal of this repository is to:
 - showcase assignments in a simple, accessible way
 
 ---
+
+## 🌐 Live Demo (GitHub Pages)
+
+The project is hosted using **GitHub Pages**.
+
+- **Main Homepage:**  
+  https://kilroy-20.github.io/Chai-Code-Cohort/
+
+From the homepage, you can navigate to individual assignments using the provided links.
+
+---
