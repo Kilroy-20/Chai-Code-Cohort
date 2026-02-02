@@ -18,6 +18,9 @@ The project is hosted using **GitHub Pages**.
 - **Main Homepage:**  
   https://kilroy-20.github.io/Chai-Code-Cohort/
 
-From the homepage, you can navigate to individual assignments using the provided links.
+- **Blogs:**  
+  https://kilroy-20.github.io/Chai-Code-Cohort/Blogs/
+
+From the homepage, you can navigate to individual blogs and projects using the provided links.
 
 ---
