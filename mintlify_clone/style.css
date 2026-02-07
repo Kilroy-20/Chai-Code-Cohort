@@ -94,7 +94,9 @@ header{
     background-color: #fff;
     font-family: Inter;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     border-radius: 20px;
     border: 1px solid var(--gray-100);
     overflow-y: auto;
@@ -143,9 +145,6 @@ header{
     font-family: Inter;
 }
 
-.talktous:hover{
-    color: ;
-}
 
 .search-box{
   position: relative;
@@ -220,6 +219,39 @@ ul{
     background-color: #50535115;
     border-radius: 10px;
 }
+
+.right-middle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+.card{
+
+    width: 356px;
+    height: 335px;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+    font-family: Inter;
+}
+
+.card a{
+    text-decoration: none;
+
+}
+
+.card-heading{
+    color: #000000;
+}
+
+.card-text{
+    color: var(--gray-500);
+}
+
 
 
 
