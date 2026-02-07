@@ -39,16 +39,22 @@ html, body {
 
 body{
     background-color: var(--gray-50);
-    padding: 16px 28px;
+    padding: 12px 0 12px 28px;
     
 }
 
 
 .main-container{
     display: grid;
-    grid-template-areas: "header header" 
-                        "sidebar content";
+
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: auto 1fr;
+
+    grid-template-areas:
+        "header header"
+        "sidebar maincontent";
 }
+
 
 header{
     display: flex;
@@ -58,21 +64,37 @@ header{
     font-weight: 500;
     font-size: 14px;
     font-family: Inter;
+    margin-bottom: 20px;
+    padding: 0 28px;
 }
 
 
 
 .sidebar{
     grid-area: sidebar;
+    max-width: 16rem;
 }
 
 .content-area{
-    grid-area: content;
+    grid-area: maincontent;
+    background-image: url(https://mintcdn.com/mintlify/dr8jV1oYIkkUJaB8/images/hero/background-light.svg?w=2500&fit=max&auto=format&n=dr8jV1oYIkkUJaB8&q=85&s=ecee4a35813e4c224dcc5bc3ba96e3d0);
+    background-size: 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: Inter;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 0 0 0;
 }
 
 .top-right{
     display: flex;
-    gap: 15px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-right a{
@@ -87,6 +109,70 @@ header{
 .documentation{
     color: rgba(0, 0, 0, 0.858);
     font-weight: 700;
+}
+
+.talktous{
+    padding: 8px 12px;
+    background-color: #ffff;
+    border: 1px solid var(--gray-100);
+    border-radius: 8px;
+    color: var(--gray-600);
+    font-weight: 550;
+    font-family: Inter;
+}
+
+.getstarted{
+    padding: 8px 12px;
+    background-color: var(--primary-dark);
+    border: 1px solid var(--gray-100);
+    border-radius: 8px;
+    color: #FFFF;
+    font-weight: 550;
+    font-family: Inter;
+}
+
+.talktous:hover{
+    color: ;
+}
+
+.search-box{
+  position: relative;
+  width: 100%;
+}
+
+.search-box input{
+  width: 100%;
+  padding: 8px 10px 8px 34px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.search-icon{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.documentation-content{
+    font-weight: 540;
+    font-size: 2.2rem;
+}
+
+.right-top{
+    padding: 180px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+.text-content{
+    color: var(--gray-500);
+    font-size: 1.15rem;
 }
 
 
