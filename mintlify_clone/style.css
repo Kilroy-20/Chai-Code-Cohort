@@ -40,16 +40,17 @@ html, body {
 body{
     background-color: var(--gray-50);
     padding: 12px 0 12px 28px;
+    overflow: hidden;
     
 }
 
 
 .main-container{
     display: grid;
-
+    width: 100%;
     grid-template-columns: 16rem 1fr;
     grid-template-rows: auto 1fr;
-
+    height: 100vh;
     grid-template-areas:
         "header header"
         "sidebar maincontent";
@@ -72,22 +73,29 @@ header{
 
 .sidebar{
     grid-area: sidebar;
-    max-width: 16rem;
+    max-width: 14rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Inter;
 }
 
 .content-area{
     grid-area: maincontent;
     background-image: url(https://mintcdn.com/mintlify/dr8jV1oYIkkUJaB8/images/hero/background-light.svg?w=2500&fit=max&auto=format&n=dr8jV1oYIkkUJaB8&q=85&s=ecee4a35813e4c224dcc5bc3ba96e3d0);
-    background-size: 100%;
-    background-position: top left;
+    background-size: contain;
+    background-position: -20px -54px;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-color: #fff;
     font-family: Inter;
-    margin-left: 20px;
     display: flex;
     justify-content: center;
     border-radius: 20px 0 0 0;
+    border: 1px solid var(--gray-100);
+    overflow-y: auto;
+    width: 100%;
 }
 
 .top-right{
@@ -137,11 +145,11 @@ header{
 
 .search-box{
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 
 .search-box input{
-  width: 100%;
+  width: 90%;
   padding: 8px 10px 8px 34px;
   border-radius: 6px;
   border: 1px solid #e0e0e0;
@@ -173,6 +181,30 @@ header{
 .text-content{
     color: var(--gray-500);
     font-size: 1.15rem;
+}
+
+.scroll-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-links a{
+    text-decoration: none;
+    color: var(--gray-500);
+    font-size: 14px;
+}
+
+.ul{
+    display: flex;
+    
+    gap: 15px;
 }
 
 
